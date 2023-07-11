@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int n,m;
+    scanf("%d ",n);
+    scanf("%d",m);
+    int count=0;
+    while(n<m){
+        int a=n/3;
+        int b=n/4;
+        int c=n+a-b;
+        n=c;
+        count++;
+    }
+    printf("%d",count/2);
+}
